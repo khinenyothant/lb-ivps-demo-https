@@ -31,9 +31,6 @@ services:
                     - nginx3
     haproxy1:
         build: ./haproxy
-        ports:
-            - 8081:80
-            - 8443:443
         expose:
             - 80
             - 443
@@ -51,8 +48,6 @@ services:
     haproxy2:
         build: ./haproxy
         ports:
-            - 8082:80
-            - 8444:443
         expose:
             - 80
             - 443
